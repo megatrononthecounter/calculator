@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calcBody {
+
+    /* Frame 1 */
+
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: absolute;
+width: 370px;
+height: 483px;
+
+background: #FFFFFF;
+border: 10px solid #D79E9E;  
+border-radius: 20px;
+
+}
+
+#calcRow {
+  /* row 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 10px 10px;
+gap: 3px;
+
+width: 338px;
+height: 55px;
+
+}
+
+#calcRow1 {
+/* row 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+padding: 10px 10px;
+gap: 28px;
+
+width: 338px;
+height: 55px;
+
+}
+
+#button {
+    /* Frame 4 */ 
+
+/* Auto layout */
+display: flex;
+align-items: center;
+margin: 0 auto;
+width: 94px;
+height: 55px;
+
+background: #D79E9E;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+#sillygoofyindustries {
+
+    /* silly goofy industries inc. */
+
+position: absolute;
+width: 162px;
+height: 17px;
+
+top: 448px;
+display: flex;
+align-items: center;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14;
+line-height: 12px;
+text-align: center;
+margin: 0;
+
+color: #000000;
+
+}
+
+#screen {
+      /* screen */ 
+
+/* Auto layout */
+display: flex;
+align-items: center;
+margin: 0 auto;
+width: 94px;
+height: 55px;
+
+background: #D79E9E;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 2;
+
+}
+
+#buttonReset {
+    /* Frame 4 */ 
+
+/* Auto layout */
+display: flex;
+align-items: center;
+margin: 0 auto;
+width: 90px;
+height: 55px;
+
+background: #D79E9E;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#button1 {
+        /* Frame 4 */ 
+
+/* Auto layout */
+display: flex;
+align-items: center;
+margin: 0 auto;
+width: 94px;
+height: 55px;
+
+background: #D79E9E;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
