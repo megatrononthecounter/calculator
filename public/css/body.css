@@ -1,0 +1,195 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calcBody {
+
+    /* Frame 1 */
+
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+background: #FFFFFF;
+border: 10px solid #D79E9E;  
+border-radius: 20px;
+
+}
+
+#calcRow {
+  /* row 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 10px 10px;
+gap: 28px;
+
+width: 338px;
+height: 55px;
+
+}
+
+#calcRow1 {
+/* row 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+padding: 10px 10px;
+gap: 28px;
+
+width: 338px;
+height: 55px;
+
+}
+
+#button {
+    /* Frame 4 */ 
+
+/* Auto layout */
+flex: none;
+align-items: center;
+margin: 0 auto;
+width: 94px;
+height: 55px;
+
+background: #D79E9E;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+border: none;
+
+}
+
+#button:hover {
+background-color: plum;
+color: palevioletred;
+}
+
+#button:active {
+    background-color: plum;
+    color: rgb(34, 29, 35);
+}
+
+
+#sillygoofyindustries {
+
+    /* silly goofy industries inc. */
+
+top: 448px;
+display: flex;
+align-items: center;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15;
+line-height: 10px;
+text-align: center;
+margin-top: -1;
+letter-spacing: 10;
+direction: rtl;
+text-indent: -.5em;
+
+color: #000000;
+
+}
+
+#screen {
+      /* screen */ 
+
+/* Auto layout */
+display: flex;
+align-items: center;
+margin: 0 auto;
+width: 100%;
+height: 76%;
+padding: 2%;
+
+background: #D79E9E;
+border-radius: 20px;
+
+/* Inside auto layout */
+order: 0;
+flex-grow: 2;
+flex-direction: column;
+align-items: flex-end;
+overflow: hidden;
+
+}
+
+#buttonReset {
+    /* Frame 4 */ 
+
+/* Auto layout */
+display: flex;
+align-items: center;
+margin: 0 auto;
+width: 90px;
+height: 55px;
+
+background: #D79E9E;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#button1 {
+        /* Frame 4 */ 
+
+/* Auto layout */
+display: flex;
+align-items: center;
+margin: 0 auto;
+width: 94px;
+height: 55px;
+
+background: #D79E9E;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#button:only-child {
+flex: auto;
+flex-grow: 1;
+}
+
+img {
+/* image!!!!! */
+position: absolute;
+    left: 350;
+    size: 100px;
+    width: 500;
+    height: 500;
+
+}
+
+#screenCalc {
+   width: 100%;
+   align-self: flex-start;
+
+}
+
+#screenNumber {
+    font-size: 30;
+    justify-content: center;
+
+}
+

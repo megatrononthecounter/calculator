@@ -1,30 +1,21 @@
  <html>
     <head>
-        <script type="text/javascript" src="calculator.js"></script>
-        <link rel="stylesheet" type="text/css" href="body.css">
+        <script type="text/javascript" src="/js/calculator.js"></script>
+        <script type="text/javascript" src="/js/requests.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/body.css">
      </head>
 
      <body>
-        <!-- <p>blehhhhh</p>
-        <p id="answer"></p>
-        <form>
-            <input type="button" value="add!" onclick="add()"/>
-            <input type="button" value="subtract!" onclick="subtract()"/>
-            <input type="button" value="multiply!" onclick="multiply()"/>
-            <input type="button" value="divide!" onclick="divide()"/>
-            <input type="button" value="exponents!" onclick="exponent()"/> 
-           1st number: <input id="numberOne" type="number"/>
-           2nd number: <input id="numberTwo" type="number"/>
-
-        </form>
-        <img title="i'm watching" src="stare.jpg" alt="silly cat staring at you intensely with a green background" /> -->
+         <img title="i'm watching" src="/image/stare.jpg" alt="silly cat staring at you intensely with a green background" /> 
 
             <div id="calcBody">
-               <p id="sillygoofyindustries">silly goofy industries</p>
                <div id="buttonsBody">
                   <div id="calcRow1"> <!--row 1-->
                      <button id="button" value="C" onclick="reset()">C</button>
-                     <div id="screen"><div id="screenNumber"></div></div>
+                     <div id="screen">
+                        <div id="screenCalc"></div>
+                        <div id="screenNumber"></div>
+                     </div>
                   </div>
                   <div id="calcRow"> <!--row 2-->
                      <button id="button" value="1" onclick="numberInput(this.value)">1</button>
@@ -52,10 +43,10 @@
                      <button id="button" value="^" onclick="operationInput(this.value)">^</button>
                   </div>
                   <div id="calcRow">
-                     <button id="button" value="=" onclick="solve()">=</button>
+                     <button id="button" value="=" onclick="solveAsync()">=</button>
                   </div>
                </div>
-               </div>
+                  <p id="sillygoofyindustries">silly goofy industries</p>
             </div>
                   
 
