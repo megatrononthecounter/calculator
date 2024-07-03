@@ -39,7 +39,7 @@ switch(operation) {
         if (!number) return;
         break;
     case '^':
-        number = await getRequest(number, numberTwo, 'Power');
+        number = await getRequest(number, numberTwo, 'Exponent');
         break;
 
 }
@@ -92,30 +92,6 @@ function operationInput(operationValue) {
     element.textContent = null;
 
 }                     
-
-function calculateDivide(element, numerator, denominator) {
-
-    if (denominator == 0) {
-        element.textContent = "impossible!"
-        return;
-    }
-
-    const answer = numerator / denominator;
-
-    return answer;
-
-}
-
-function calculateExponent(numberOne, numberTwo) {
-
-    let answer = numberOne;
-
-    for (let i = 0; i < numberTwo - 1; i++) {
-        answer = answer * numberOne;
-    }
-
-    return answer;
-}
 
 function setscreenCalc(op, number) {
 const element = document.getElementById('screenCalc');
