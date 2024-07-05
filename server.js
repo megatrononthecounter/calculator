@@ -4,14 +4,19 @@ const calculate = require('./calcLogic.js');
 
 const app = express();
 const port = process.env.PORT || 8000;
+const router = express.Router();
 
 app.use(express.static(path.join(__dirname, 'public'))) 
 app.use(express.json());
 
 // sendFile will go here
-app.get('/', function(req, res) {
+router.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/calculator.html'));
     });
+
+    router.get('/secondPage', function(req, res) {
+      res.sendFile(path.join(__dirname, '/secondPage.html'));
+      });
 
 // API text
 app.get('/HelloWorld', function(req, res) {
@@ -80,6 +85,6 @@ app.post('/exponent', function(req, res) {
     });
    });
 
-
+app.use('/', router);
 app.listen(port);   
 console.log('server started at http://localhost:' + port);
